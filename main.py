@@ -28,7 +28,7 @@ def parser():
     for num,item in enumerate(all_vacan):
         if num==0:
 
-            # Забираем название и ссылку вакансии
+            # Забираем название и ссылку  вакансии
             title = item.find('h3').text
             href = item.find('h3').find('span', class_='g-user-content').find('a').get('href')
             # Забираем описание
